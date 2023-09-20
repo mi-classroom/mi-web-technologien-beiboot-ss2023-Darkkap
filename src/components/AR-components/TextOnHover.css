@@ -1,0 +1,14 @@
+.TextOnHover-header {
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+}
+
+.header-back-button {
+    border: none;
+    background: transparent !important;
+}
+
+.a-canvas {
+    max-width: 480px !important;
+}

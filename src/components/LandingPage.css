@@ -1,0 +1,75 @@
+.landingPageVideo {
+  max-width: 480px;
+  width: 100vw;
+}
+
+.landingPage-headline-capital-letter {
+  color: #eb6a0a;
+  margin: 0;
+}
+
+.landingPage-headline {
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.landingPage-headline {
+  margin: 16px 0 0 8px;
+}
+
+.landingPage-sub-headline {
+  font-size:38px;
+  font-weight: lighter;
+  margin: 0 0 0 8px;
+}
+
+.landingPage-video-background-group {
+  position: relative;
+}
+
+.landingPage-video-fading-background {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(transparent 0.1%, black 40%);
+  background-size: 100% 100%;
+}
+
+.landingPage-choose-cards {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../assets/images/aggertalsperre.jpg_667295446.jpg");
+  background-size: 100% 100%;
+}
+
+.landingPage-card-1,
+.landingPage-card-2 {
+  width: 95%;
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  margin: 10px;
+}
+
+.landingPage-card-1 {
+  background-color: #000000;
+}
+
+.landingPage-card-2 {
+  background-color: #EB6A0A;
+}
+
+.landingPage-card-first-line {
+  font-size: 20px;
+  margin: 5px 0 5px 0;
+}
+
+.landingPage-card-second-line {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
