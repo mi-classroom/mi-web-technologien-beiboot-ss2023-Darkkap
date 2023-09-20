@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+}
+
+.header-back-button {
+  border: none;
+  background: transparent;
+}
+
+.ChooseMethod-card-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.ChooseMethod-card-1,
+.ChooseMethod-card-2,
+.ChooseMethod-card-3 {
+  display: flex;
+  position: relative;
+  min-height: 240px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.ChooseMethod-card-1 {
+  background-color: #000000;
+}
+
+.ChooseMethod-card-2 {
+  background-color: #eb6a0a;
+}
+
+.ChooseMethod-card-3 {
+  background-color: #00000033;
+}
+
+.ChooseMethod-icon {
+    width: 48px;
+}
+
+.ChooseMethod-card-text {
+  position: absolute;
+  height: 20px;
+  color: white;
+  top: 50%;
+  font-size: 20px;
+}

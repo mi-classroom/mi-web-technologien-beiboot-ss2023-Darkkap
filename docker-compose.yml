@@ -1,9 +1,15 @@
-version: "3.7"
-
+version: '3.4'
 services:
-  server: 
-    build: .
+  client:
+    build:
+      context: .
+      target: builder-client
     ports:
-      - "80:80"
+     - "3000:3000"
     volumes:
-      - ./frontend:/usr/local/apache2/htdocs/
+     - ./public:/home/node/app/public
+     - ./src:/home/node/app/src
+     - ./package.json:/home/node/app/package.json
+    tty: true
+    environment:
+      NODE_ENV: "development"
