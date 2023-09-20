@@ -3,7 +3,13 @@
 ### Zeitaufwand
 | Issue 1 | Issue 2 | Issue 3 | Issue 4 |
 |---|---|---|---|
-| 5 Stunden | - | -  | - |
+| 5 Stunden | 2 Stunden | -  | - |
+
+### Deployment und Hosting für mobile Endgeräte
+
+Im Root-Verzeichnis wo die 📄 docker-compose.yml liegt den Befehl ```docker compose up``` im Terminal ausführen. Der Dienst wird auf ```localhost:80``` deployt.
+
+Um den den Dienst auf Remote Endgeräten aufzurufen über das Ngrok (https://ngrok.com/download) Terminal den Befehl ```ngrok http 80``` ausführen. Unter ```Forwarding``` wird die URL angezeigt die auf den Localhost tunnelt.
 
 ### Tests und Erkenntnisse
 
