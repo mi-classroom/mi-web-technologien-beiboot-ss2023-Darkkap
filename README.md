@@ -3,7 +3,7 @@
 ### Zeitaufwand
 | Issue 1 | Issue 2 | Issue 3 | Issue 4 |
 |---|---|---|---|
-| 5 Stunden | 2 Stunden | -  | - |
+| 5 Stunden | 2 Stunden | 3 Stunden  | - |
 
 ### Deployment und Hosting für mobile Endgeräte
 

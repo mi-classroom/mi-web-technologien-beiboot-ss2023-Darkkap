@@ -1,0 +1,65 @@
+<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+<body>
+  <script>
+    AFRAME.registerComponent("soundcontroller", {
+      init: function () {
+        const controlButton = this.el;
+        controlButton.addEventListener("click", function (event) {
+          const soundControl = event.srcElement.id;
+
+          const soundSource = document.querySelector("#batsInWild");
+
+          if (soundControl == "play") {
+            soundSource.components.sound.playSound();
+          }
+          if (soundControl == "pause") {
+            soundSource.components.sound.pauseSound();
+          }
+          if (soundControl == "stop") {
+            soundSource.components.sound.stopSound();
+          }
+        });
+      },
+    });
+  </script>
+  <a-scene>
+    <a-cylinder
+      id="batsInWild"
+      position="0 1 -3"
+      radius="0.5"
+      height="1.5"
+      color="#FFC65D"
+      sound="src: url(assets\media\batsInWild.mp3); autoplay: false"
+      event-set__enter="_event: mouseenter; _target: #cylinderText, #test; visible: true"
+      event-set__leave="_event: mouseleave; _target: #cylinderText; visible: false"
+    >
+      <a-entity id="cylinderText">
+        <a-box
+          id="play"
+          color="green"
+          position="0.4 -0.55 1"
+          scale="0.3 0.3 0.3"
+          soundcontroller
+        ></a-box>
+        <a-box
+          id="pause"
+          color="yellow"
+          position="0 -0.55 1"
+          scale="0.3 0.3 0.3"
+          soundcontroller
+        ></a-box>
+        <a-box
+          id="stop"
+          color="red"
+          position="-0.4 -0.55 1"
+          scale="0.3 0.3 0.3"
+          soundcontroller
+        ></a-box>
+      </a-entity>
+    </a-cylinder>
+    <a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+  </a-scene>
+</body>
