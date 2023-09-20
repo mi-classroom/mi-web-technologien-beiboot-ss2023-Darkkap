@@ -3,13 +3,15 @@
 ### Zeitaufwand
 | Issue 1 | Issue 2 | Issue 3 | Issue 4 |
 |---|---|---|---|
-| 5 Stunden | 2 Stunden | 3 Stunden  | - |
+| 5 Stunden | 2 Stunden | 3 Stunden  | 22 Stunden |
 
 ### Deployment und Hosting für mobile Endgeräte
 
-Im Root-Verzeichnis wo die 📄 docker-compose.yml liegt den Befehl ```docker compose up``` im Terminal ausführen. Der Dienst wird auf ```localhost:80``` deployt.
+Im Root-Verzeichnis wo die 📄 docker-compose.yml liegt den Befehl ```docker compose up --build``` im Terminal ausführen. Der Dienst wird auf ```localhost:3000``` deployt.
 
-Um den den Dienst auf Remote Endgeräten aufzurufen über das Ngrok (https://ngrok.com/download) Terminal den Befehl ```ngrok http 80``` ausführen. Unter ```Forwarding``` wird die URL angezeigt die auf den Localhost tunnelt.
+Um den den Dienst auf Remote Endgeräten aufzurufen über das Ngrok (https://ngrok.com/download) Terminal den Befehl ```ngrok http 3000``` ausführen. Unter ```Forwarding``` wird die URL angezeigt die auf den Localhost tunnelt.
+
+Auf einem iPhone ist die Wiedergabe von Audio nicht lösbar gewesen aufgrund der Policies von Apple. Das Click-Event funktioniert wie von A-Frame empfohlen in Chrome/Firefox auf Desktop/Android. Da bin ich dann aber auch an meine Grenzen gestoßen das Debuggen zu wollen.
 
 ### Tests und Erkenntnisse
 
